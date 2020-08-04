@@ -44,7 +44,7 @@
                             </div>
                             <div>
                                 <button id="submitBtn" onclick="matchPin();clearPlace();" type="submit" class="submit-btn">Submit</button>
-                                <p id="tryLeft"class="action-left">3 try left</p>
+                                <p id=actionPara class="action-left"><span id="tryLeft">3</span> try left</p>
                             </div>
                     </div>
                 </div>
@@ -75,7 +75,7 @@
                document.getElementById("submitBtn").disabled=true;
            }
            else if(inputNumber!=generatedNumber){
-            document.getElementById("submitBtn").disabled=true;
+            
             document.getElementById("pinMatch").style.display="none";
             document.getElementById("noPinMatch").style.display="block";
             document.getElementById("notGiven").style.display="none";
@@ -115,7 +115,11 @@
             document.getElementById("inputPlaceHolder").value= "";
         }
       }
+      
     
+    
+        
+   
       
       
     </script>
